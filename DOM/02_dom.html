@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>DOM 2</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .day{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- this is comment -->
+        <div class="day">monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+    <script>
+    const parent=    document.querySelector(".parent");
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1]);
+    // console.log(parent.children[2].innerHTML);
+
+
+        // for (let index = 0; index < parent.children.length; index++) {
+        //     console.log( parent.children[index]);
+        //     console.log( parent.children[index].innerHTML);
+            
+        // }
+        parent.children[0].style.color="orange";
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+
+        const day1= document.querySelector('.day');
+            console.log(day1);
+            console.log(day1.parentElement)
+            console.log(day1.nextElementSibling)
+
+
+            console.log("NODES:",parent.childNodes);
+
+    </script>
+</body>
+</html>

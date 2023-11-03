@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom 3</title>
+    <style>
+
+        *{
+            background-color:black;
+        }
+        </style>
+</head>
+<body>
+    
+</body>
+
+<script>
+     const div =document.createElement("div") ;
+    div.className='main'
+    div.id=Math.floor(Math.random()*(10-0+1)+0)  //  
+     console.log(div);
+     div.setAttribute("title","genrated title");
+     div.style.backgroundColor='green';
+     div.style.width="200px";
+     div.style.height="100px";
+    // div.innerHTML="Vaibhav Nagargoje ";       /// div are created only on memory 
+    const addText = document.createTextNode("Vaibhav Nagargoje ")
+    div.appendChild(addText)
+     /// attaching or publishing div on our html document
+     document.body.appendChild(div)
+ 
+
+
+
+
+
+</script>
+
+
+</html>
