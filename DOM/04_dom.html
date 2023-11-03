@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 4 </title>
+    <style>
+        *{background-color:#212121}
+        
+    </style>
+</head>
+<body style="color: white;">
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+
+    
+</body>
+<script>
+    function addLanguage(langName){
+    const listItem=document.createElement("li");
+    listItem.innerHTML=`${langName}`
+    document.querySelector(".language").appendChild(listItem);
+    // document.body.appendChild(additem)
+    }
+    addLanguage("python")
+    addLanguage("kotlin")
+
+
+
+    // optimizatin way   
+    function addOptiLangauge(langName){
+         const listItem = document.createElement("li")
+         listItem.appendChild(document.createTextNode(langName))
+
+         document.querySelector('.language').appendChild(listItem);
+
+
+    }
+    addOptiLangauge("Marathi ha ha ha...")
+
+
+    // editing value 
+    const liSelect = document.querySelector("li:nth-child(2)")
+    // liSelect.innerHTML="MOJO"   /// not a  optimized way 
+    // 2nd approch
+    const newLi=document.createElement("li")
+    newLi.textContent="goLang"
+    liSelect.replaceWith(newLi)
+
+
+
+    //edit 3rd way
+    const firstLnag= document.querySelector("li:first-child")
+    firstLnag.outerHTML="<li> JS </li>"
+
+
+
+
+    // remove 
+    const lastLang= document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
