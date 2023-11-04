@@ -24,10 +24,13 @@
     width: 50px;
 }
 
+span{
+    display: flex;
+}
 .canvas{
     /* justify-content: space-evenly; */
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .button{
     position: relative;
@@ -35,7 +38,7 @@
     height: 100px;
     width: 100px;
     border:2px solid black;
-    display: flex;
+    display: inline-block;  
     
 
 }
@@ -56,4 +59,13 @@
 
 #yellow{
     background-color: yellow;
+}
+#purple{
+    display: block;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+
+    
 }
