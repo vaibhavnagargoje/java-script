@@ -1,0 +1,59 @@
+*{
+    /* background-color: aqua; */
+    margin:0;
+    padding:0;
+
+}
+
+.Navbar{
+    height: 50px ;
+    background-color:aliceblue;
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+}
+
+
+
+.Navbar button{
+    /* position: absolute; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height:2rem;
+    width: 50px;
+}
+
+.canvas{
+    /* justify-content: space-evenly; */
+    text-align: center;
+    justify-content: center;
+}
+.button{
+    position: relative;
+    margin:5px;
+    height: 100px;
+    width: 100px;
+    border:2px solid black;
+    display: flex;
+    
+
+}
+#grey{
+    background-color: gray;
+    
+
+}
+
+#white{
+    background-color: white;
+
+}
+
+#green{
+    background-color: green;
+}
+
+#yellow{
+    background-color: yellow;
+}
