@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    width: 100vw;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: Bold;
+    justify-content: space-around;
+    
+}
+
+.main-container > p:nth-child(5){
+    display: flex;
+    /* background-color: #fff; */
+
+}
+
+#result{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+
