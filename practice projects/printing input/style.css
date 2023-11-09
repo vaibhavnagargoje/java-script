@@ -1,0 +1,24 @@
+main{
+    display: inline-block;   
+    justify-content: center;
+    align-items: center;  
+}
+.container{
+    
+    text-align: center;
+    margin-top: 50px;
+}
+.container input{
+    padding: 10px;
+}
+.output{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size:100px;
+    border-radius: 10px;
+    border: gray solid 3px ;
+    width: 800px;
+    
+    
+}
