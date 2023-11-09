@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img id="img1" src="image/img1.png" width=" 80px" alt=""></li>
+        <li><img id="img" src="image/img2.png" onclick="alert('I am a 2nd chiled of UL ')" width=" 80px" alt=""></li>
+        <li><img id="img3" src="image/img3.png" width=" 80px" alt=""></li>
+        <li><img id="img4" src="image/img4.png" width=" 80px" alt=""></li>
+        <li><img id="img5" src="image/img5.png" width=" 80px" alt=""></li>
+        <li id="google"><a href="https://google.com">google</a></li>
+    </ul>
+
+
+    <script>
+         document.getElementById("img3").onclick=()=>{
+            alert("i am clicked thorw  function")
+        }
+
+
+        // document.getElementById("img4").addEventListener('click', (event)=>{
+        //      alert(" this is 3rd way ") 
+        //      console.log(event);
+        //     }, false)
+
+            // type , timestamp, defaultPrevented
+            // target, toElement ,sourceElement, currentTarget, 
+            // clientX, clientY, screenx,screenY
+            // altkey , ctrlkey,shiftkey,keyCode 
+
+
+           // //Propogration Event => Bubbling Mode , Inside to outside  
+
+        // document.getElementById("images").addEventListener('click', function(event){
+        //     console.log("clicked under ul");
+        // }, false)  // defalt value is  false 
+
+        // document.getElementById('img4').addEventListener('click',(event)=>{
+        //     console.log('clicked image 4');
+        // },false)
+
+        // // propogation event => capturing Mode - outside to inside 
+
+        // document.getElementById("images").addEventListener('click', function(event){
+        //     console.log("clicked under ul");
+        // }, true )  // defalt value is  false 
+
+        // document.getElementById('img4').addEventListener('click',(event)=>{
+        //     console.log('clicked image 4');
+        // },true)
+
+
+         // // Stop Propogation - do not bubble 
+
+        // document.getElementById("images").addEventListener('click', function(event){
+        //     console.log("clicked under ul");
+        // }, false)  // defalt value is  false 
+
+        // document.getElementById('img4').addEventListener('click',(event)=>{
+        //     console.log('clicked image 4');
+        //     event.stopPropagation()    // event cant bubbling 
+        // },false)
+
+
+        // document.getElementById("google").addEventListener('click',(event)=>{
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        //     console.log('google clicked ');
+        // },false)
+
+
+
+
+
+
+        document.querySelector('#images').addEventListener('click',(event)=>{
+            // console.log("event");
+            console.log(event.target.parentNode);
+            let remove = event.target.parentNode;
+            remove.remove()  // direct remove 
+            // remove.parentNode.removeChild(remove) old method 
+        },false)
+
+
+
+    </script>
+</body>
+</html>
