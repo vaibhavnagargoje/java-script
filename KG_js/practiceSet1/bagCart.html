@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            border:2px black solid;
+            border-radius:4px;
+            padding:10px;
+            background-color: green;
+
+        }
+        .btn:nth-child(2){
+            background-color: white;
+        }
+        .btn:active{
+            background-color: gray;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <button class="btn">add to bag</button>
+            <button class="btn">Move to wishlist</button>
+            <button class="btn">add 1+1 sale item</button>
+        </div>
+        <div>
+            Your Bag has <span>0</span> items
+        </div>
+    </main>
+</body>
+</html>
