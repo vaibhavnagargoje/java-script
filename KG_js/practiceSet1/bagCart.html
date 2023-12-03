@@ -6,8 +6,13 @@
     <title>My Cart</title>
     <style>
         main{
-            display: flex;
+            margin: auto;
+        }
+
+        .container{
+                        display: flex;
             justify-content: center;
+
         }
         .btn{
             border:2px black solid;
@@ -28,13 +33,22 @@
 <body>
     <main>
         <div class="container">
-            <button class="btn">add to bag</button>
-            <button class="btn">Move to wishlist</button>
-            <button class="btn">add 1+1 sale item</button>
+            <button class="btn" onclick="cartQuantity=cartQuantity+1;
+        document.querySelector('#card-summary').innerText=`your bag has ${cartQuantity} items`;
+            ">add to bag</button>
+            <button class="btn" onclick="cartQuantity--;
+            document.querySelector('#card-summary').innerText=`your bag has ${cartQuantity} items`">Move to wishlist</button>
+            <button class="btn" onclick="cartQuantity+=2;
+            document.querySelector('#card-summary').innerText=`your bag has ${cartQuantity} items`">add 1+1 sale item</button>
         </div>
-        <div>
-            Your Bag has <span>0</span> items
+        <div id="card-summary">
+            
         </div>
     </main>
+
+    <script>
+        let cartQuantity=0;
+        document.querySelector('#card-summary').innerText=`your bag has No items ${cartQuantity}`;
+    </script>
 </body>
 </html>

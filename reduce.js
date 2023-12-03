@@ -40,3 +40,10 @@ const shoppingcorse = [
 
 let totalPrice = shoppingcorse.reduce( (starting, course)=> +starting+course.price ,0)
 console.log(totalPrice);
+
+
+//// fibonachi serives using reduce
+let arr = [1,2,3,4,5]
+
+let fib= arr.reduce((priv,current)=>priv*current,1)
+console.log(fib);
