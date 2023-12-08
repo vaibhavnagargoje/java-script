@@ -9,17 +9,24 @@
 <body>
     
     <main>
-        <div class="container">
+        <form class="form">
 
             <h1> Number Guessing Game </h1>
             <input id="input" type="text">
-            <button id="submit" value="submitGuess"> Check </button>
-            <p> privious Guessess:  <span>...</span></p>
-            <p> Remaing Chance : <span>...</span> </p >
+            <input id="submit" type="submit"> </button>
+        </form>
+            
+        
+        <div class="result">
+            
+            <p> privious Guessess:  <span class="guess">...</span></p>
+            <p> Remaing Chance : <span class="lastResult ">10</span> </p >
+            <span>
+                <p class="message"></p>
+            </span>
+        </div>
+                
 
-
-
-       </div>
     </main>
 <script src="script.js"></script>     
 
