@@ -1,5 +1,6 @@
 let Random =  Math.random()*100+1
 Random=Math.floor(Random)
+console.log(Random);
 
 
 const submit = document.querySelector('#submit')
@@ -75,10 +76,16 @@ function displayGuess(guess){
 
 }
 
-function newGame(){
-
+function endGame(){
+    userInput.value=''
+    userInput.setAttribute('desabled','')
+    p.classList.add('button')
+    p.innerHTML=`<h2 id ="newgame">  <br> start new game</H2>`;
+    starover.appendChild(p)
+    playGame=false
+    newGame()
 }
 
-function endGame(){
+function newGame(){
 
 }
