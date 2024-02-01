@@ -1,5 +1,5 @@
 const insert = document.getElementById('pressed')
-window.addEventListener('keydown',(e)=>{
+window.addEventListener('keyup',(e)=>{
     insert.innerHTML= `
     <div class='color'>
         <table border>

@@ -13,7 +13,7 @@ const RandomColor = function () {
 
 let interval;
 const startChangeBg = function () {
-   interval= setInterval(changeBg,1000);
+    interval= setInterval(changeBg,1000);
     
     function changeBg(){
     document.body.style.backgroundColor = RandomColor();
