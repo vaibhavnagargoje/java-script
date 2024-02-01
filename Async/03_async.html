@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1> Hello Vaibhav</h1>
+    <button id="stop"> Stop</button>
+     
+
+
+    <script>
+        setTimeout(function() {      // wait 2 sec and then execute  only one time after 2 sec 
+            console.log("vaibhav nagargoje");
+        },2000);
+
+        let saymyname = ()=>{
+    document.querySelector('h1').innerHTML="Mauli Nagargoje"
+            
+        }
+        const stopChange= setTimeout(saymyname,1500)  // getting refrence and then chage context using SetTimeout
+        document.querySelector('#stop').addEventListener('click',()=>clearTimeout(stopChange))
+
+
+
+        
+
+    </script>
+</body>
+</html>
