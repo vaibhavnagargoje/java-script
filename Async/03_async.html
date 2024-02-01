@@ -8,6 +8,7 @@
 <body>
     <h1> Hello Vaibhav</h1>
     <button id="stop"> Stop</button>
+    <button id="start">Start</button>
      
 
 
@@ -21,11 +22,28 @@
             
         }
         const stopChange= setTimeout(saymyname,1500)  // getting refrence and then chage context using SetTimeout
-        document.querySelector('#stop').addEventListener('click',()=>clearTimeout(stopChange))
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(intervalId)})
 
+        // setInterval 
+
+        const sayDate= function(){
+            console.log('vaibahv',Date.now());
+        }
+        const intervalId = setInterval(sayDate ,1000,'hi')
+        
+        
+
+        // clearInterval
+        document.querySelector('#start').addEventListener('click',function(){ 
+        setInterval(sayDate ,1000)
+
+         })
 
 
         
+
+
 
     </script>
 </body>
