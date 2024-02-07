@@ -13,10 +13,15 @@ const Myobject = {
 }
 
 console.log(Object.getOwnPropertyDescriptors(Myobject));  // for all property 
-Object.defineProperty(Myobject,'name',{
+Object.defineProperty(Myobject,'course',{
     writable:false,
     enumerable:false,
-    configurable:false
+    configurable:false,
+    
 })
 
 console.log(Object.getOwnPropertyDescriptor(Myobject,'name')); // for only one property 
+
+for (let [key,value] of Object.entries(Myobject)) {
+    console.log(`${key} : ${value}`);
+}
